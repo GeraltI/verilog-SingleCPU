@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/param.v" --include "../../../../cpu.srcs/sources_1/ip/cpuclk" --include "../../../../cpu.srcs/sources_1/new" \
+"../../../../cpu.srcs/sources_1/ip/DRAM/sim/DRAM.v" \
+"../../../../cpu.srcs/sources_1/ip/IROM/sim/IROM.v" \
+"../../../../cpu.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" \
+"../../../../cpu.srcs/sources_1/ip/cpuclk/cpuclk.v" \
+"../../../../cpu.srcs/sources_1/new/ALU.v" \
+"../../../../cpu.srcs/sources_1/new/BUS.v" \
+"../../../../cpu.srcs/sources_1/new/CTRL.v" \
+"../../../../cpu.srcs/sources_1/new/DightDriver.v" \
+"../../../../cpu.srcs/sources_1/new/LED.v" \
+"../../../../cpu.srcs/sources_1/new/LOAD.v" \
+"../../../../cpu.srcs/sources_1/new/NPC.v" \
+"../../../../cpu.srcs/sources_1/new/PC.v" \
+"../../../../cpu.srcs/sources_1/new/RegFile.v" \
+"../../../../cpu.srcs/sources_1/new/SEXT.v" \
+"../../../../cpu.srcs/sources_1/new/STORE.v" \
+"../../../../cpu.srcs/sources_1/new/SingleCPU.v" \
+"../../../../cpu.srcs/sim_1/new/cpuclk_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

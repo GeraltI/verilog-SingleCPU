@@ -1,0 +1,465 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jul 17 15:58:16 2022
+# Process ID: 2668
+# Current directory: E:/study/设计与实践/lab2/cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4140 E:\study\设计与实践\lab2\cpu\cpu.xpr
+# Log file: E:/study/设计与实践/lab2/cpu/vivado.log
+# Journal file: E:/study/设计与实践/lab2/cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/study/设计与实践/lab2/cpu/cpu.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/hao/Desktop/cpu/cpu.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 719.488 ; gain = 76.969
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'...
+export_ip_user_files -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/hao/Desktop/cpu/cpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hao/Desktop/cpu/cpu.ip_user_files -ipstatic_source_dir E:/study/设计与实践/lab2/cpu/cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/modelsim} {questa=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/questa} {riviera=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/riviera} {activehdl=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpuclk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram_lab1.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/prgrom.dcp'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpuclk_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/param.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/DightDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DightDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LOAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LOAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SEXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/STORE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module STORE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SingleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f924ca0449cd4293804ce734e84bc814 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_sim_behav xil_defaultlib.cpuclk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'a' [E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v:157]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.SEXT
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.STORE
+Compiling module xil_defaultlib.LOAD
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.SingleCPU
+Compiling module xil_defaultlib.BUS
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.DightDriver
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.cpuclk_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpuclk_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/cpuclk_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 17 20:44:57 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 859.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpuclk_sim_behav -key {Behavioral:sim_1:Functional:cpuclk_sim} -tclbatch {cpuclk_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpuclk_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 100us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpuclk_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 859.238 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 100 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpuclk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram_lab1.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/prgrom.dcp'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpuclk_sim_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f924ca0449cd4293804ce734e84bc814 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_sim_behav xil_defaultlib.cpuclk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'a' [E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v:157]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 859.238 ; gain = 0.000
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 us
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {33} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33} CONFIG.CLKOUT1_JITTER {352.369} CONFIG.CLKOUT1_PHASE_ERROR {261.747}] [get_ips cpuclk]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+generate_target Simulation [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'...
+export_ip_user_files -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/hao/Desktop/cpu/cpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hao/Desktop/cpu/cpu.ip_user_files -ipstatic_source_dir E:/study/设计与实践/lab2/cpu/cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/modelsim} {questa=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/questa} {riviera=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/riviera} {activehdl=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpuclk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram_lab1.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/prgrom.dcp'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpuclk_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/param.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/DightDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DightDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LOAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LOAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SEXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/STORE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module STORE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SingleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f924ca0449cd4293804ce734e84bc814 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_sim_behav xil_defaultlib.cpuclk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'a' [E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v:157]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=33,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.SEXT
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.STORE
+Compiling module xil_defaultlib.LOAD
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.SingleCPU
+Compiling module xil_defaultlib.BUS
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.DightDriver
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.cpuclk_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpuclk_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpuclk_sim_behav -key {Behavioral:sim_1:Functional:cpuclk_sim} -tclbatch {cpuclk_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpuclk_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 100us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpuclk_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1073.547 ; gain = 0.000
+set_property -dict [list CONFIG.coefficient_file {E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/inst_ram.coe}] [get_ips IROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/inst_ram.coe' provided. It will be converted relative to IP Instance files 'inst_ram.coe'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+generate_target Simulation [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+export_ip_user_files -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/IROM.xci] -directory C:/Users/hao/Desktop/cpu/cpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hao/Desktop/cpu/cpu.ip_user_files -ipstatic_source_dir E:/study/设计与实践/lab2/cpu/cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/modelsim} {questa=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/questa} {riviera=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/riviera} {activehdl=E:/study/设计与实践/lab2/cpu/cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpuclk_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/DRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/IROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/data_ram.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/inst_ram_lab1.coe'
+INFO: [SIM-utils-43] Exported 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim/prgrom.dcp'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpuclk_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/param.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/IROM/sim/IROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/CTRL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/DightDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DightDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/LOAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LOAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SEXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/STORE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module STORE
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sources_1/new/SingleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f924ca0449cd4293804ce734e84bc814 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_sim_behav xil_defaultlib.cpuclk_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 14 for port 'a' [E:/study/设计与实践/lab2/cpu/cpu.srcs/sim_1/new/cpuclk_sim.v:157]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=33,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.IROM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.CTRL
+Compiling module xil_defaultlib.SEXT
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.STORE
+Compiling module xil_defaultlib.LOAD
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.SingleCPU
+Compiling module xil_defaultlib.BUS
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.DightDriver
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.cpuclk_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpuclk_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/study/设计与实践/lab2/cpu/cpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpuclk_sim_behav -key {Behavioral:sim_1:Functional:cpuclk_sim} -tclbatch {cpuclk_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpuclk_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 100us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpuclk_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.207 ; gain = 0.000
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 18 00:16:49 2022...
